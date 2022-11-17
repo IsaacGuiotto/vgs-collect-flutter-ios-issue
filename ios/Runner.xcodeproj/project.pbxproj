@@ -31,6 +31,10 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		BC42C97E292659410048E646 /* ActivateCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42C97D292659410048E646 /* ActivateCardFactory.swift */; };
+		BC42C9802926594C0048E646 /* ActivateCardPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42C97F2926594C0048E646 /* ActivateCardPlugin.swift */; };
+		BC42C982292659580048E646 /* ActivateCardTextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42C981292659580048E646 /* ActivateCardTextViews.swift */; };
+		BC42C984292659630048E646 /* ActivateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42C983292659630048E646 /* ActivateCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +83,10 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42C97D292659410048E646 /* ActivateCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateCardFactory.swift; sourceTree = "<group>"; };
+		BC42C97F2926594C0048E646 /* ActivateCardPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateCardPlugin.swift; sourceTree = "<group>"; };
+		BC42C981292659580048E646 /* ActivateCardTextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateCardTextViews.swift; sourceTree = "<group>"; };
+		BC42C983292659630048E646 /* ActivateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateCardView.swift; sourceTree = "<group>"; };
 		D1C9792E83ED74B12FE2F5D5 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		EBA07020ED879CDD8008CBA8 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,6 +257,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				BC42C97C292659200048E646 /* activate_card_native_view */,
 				4433F09428D05CB200355BC5 /* UseCases */,
 				440735CD28C71D92005D6DBC /* Extensions */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
@@ -261,6 +270,17 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		BC42C97C292659200048E646 /* activate_card_native_view */ = {
+			isa = PBXGroup;
+			children = (
+				BC42C97D292659410048E646 /* ActivateCardFactory.swift */,
+				BC42C97F2926594C0048E646 /* ActivateCardPlugin.swift */,
+				BC42C981292659580048E646 /* ActivateCardTextViews.swift */,
+				BC42C983292659630048E646 /* ActivateCardView.swift */,
+			);
+			path = activate_card_native_view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +430,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC42C982292659580048E646 /* ActivateCardTextViews.swift in Sources */,
 				440735D128C71DB4005D6DBC /* UIView+Extensions.swift in Sources */,
 				443E119628D9EC9B0048F2B5 /* FlutterCardDataCollectViewPlugin.swift in Sources */,
+				BC42C984292659630048E646 /* ActivateCardView.swift in Sources */,
 				443E119228D9EB8C0048F2B5 /* CollectCardDataView.swift in Sources */,
 				443E119828D9ECCC0048F2B5 /* FlutterCardDataCollectViewFactory.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
@@ -427,8 +449,10 @@
 				44D6EA3B28C3860D00547183 /* FlutterCustomCardDataCollectViewFactory.swift in Sources */,
 				443E119428D9EC120048F2B5 /* FlutterCardDataCollectView.swift in Sources */,
 				443E119C28D9F2F40048F2B5 /* ShowCardView.swift in Sources */,
+				BC42C9802926594C0048E646 /* ActivateCardPlugin.swift in Sources */,
 				4468CB8A290FD6FD00B2AFE5 /* TokenizeCardDataCollectView.swift in Sources */,
 				443E11A028D9FA410048F2B5 /* FlutterShowPlatformViewFactory.swift in Sources */,
+				BC42C97E292659410048E646 /* ActivateCardFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,8 @@ import Flutter
     FlutterCardDataCollectViewPlugin.register(with: registrar(forPlugin: "FlutterCardDataCollectViewPlugin")!)
 
     FlutterShowViewPlugin.register(with: registrar(forPlugin: "FlutterShowViewPlugin")!)
+    
+    ActivateCardPlugin.register(with: registrar(forPlugin: "ActivateCardPlugin")!)
 
 		return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
