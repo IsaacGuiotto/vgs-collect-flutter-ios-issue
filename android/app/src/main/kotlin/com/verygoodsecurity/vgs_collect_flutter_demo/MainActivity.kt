@@ -35,6 +35,7 @@ class MainActivity : FlutterActivity(), CardIO {
             TokenizationCardView.VIEW_TYPE,
             TokenizationCardViewFactory(this, flutterEngine.dartExecutor.binaryMessenger)
         )
+        registry.registerViewFactory("activate-card-view", ActivateCardFactory(flutterEngine.dartExecutor.binaryMessenger))
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" tools:context="com.globalfy.mobile.a32809.globalfy_mobile.MainActivity">
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+        <com.verygoodsecurity.vgscollect.widget.CardVerificationCodeEditText
+                android:id="@+id/vgsCVC"
+                style="@style/TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fieldName="data.attributes.cvv2"
+                app:hint="CVC/CVV"
+                app:previewIconGravity="end"
+                app:previewIconVisibility="always" />
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+
+    <com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+        <com.verygoodsecurity.vgscollect.widget.ExpirationDateEditText
+                android:id="@+id/vgsExpiry"
+                style="@style/TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:datePattern="yyyy/MM"
+                app:datePickerModes="input"
+                app:fieldName="data.attributes.expirationDate"
+                app:outputPattern="yyyy-MM"
+                app:hint="YYYY-MM"
+                app:inputType="date" />
+    </com.verygoodsecurity.vgscollect.widget.VGSTextInputLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
